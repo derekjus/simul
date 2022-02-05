@@ -1,0 +1,661 @@
+<head>
+<title>DerOS web Edition 2.0 (Developer Preview 2.0) </title>
+<script>
+function finder(){
+
+}
+function safari(){
+
+}
+function xcode(){
+
+}
+function iTunes(){
+
+}
+</script>
+<script>
+function SSO() {
+  document.getElementById("sss").style.width = "30%";
+}
+
+function SSC() {
+  document.getElementById("sss").style.width = "0%";
+}
+
+
+
+function FFO() {
+  document.getElementById("fff").style.width = "30%";
+}
+
+function FFC() {
+  document.getElementById("fff").style.width = "0%";
+}
+
+
+
+function GGO() {
+  document.getElementById("ggg").style.width = "30%";
+}
+
+function GGC() {
+  document.getElementById("ggg").style.width = "0%";
+}
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#FINDER" ).draggable();
+  } );
+  $( function() {
+    $( "#SAFARI" ).draggable();
+  } );
+  $( function() {
+    $( "#XCODE" ).draggable();
+  } );
+  $( function() {
+    $( "#ITUNES" ).draggable();
+  } );
+  $( function() {
+    $( "#APP" ).draggable();
+  } );
+  $( function() {
+    $( "#MSG" ).draggable();
+  } );
+  $( function() {
+    $( "#SYS" ).draggable();
+  } );
+  $( function() {
+    $( "#OS" ).draggable();
+  } );
+  $( function() {
+    $( "#TRASH" ).draggable();
+  } );
+
+</script>
+
+<script>
+  $( function() {
+    $( "#FINDER" ).resizable();
+  } );
+  $( function() {
+    $( "#SAFRI" ).resizable();
+  } );
+  $( function() {
+    $( "#XCODE" ).resizable();
+  } );
+  $( function() {
+    $( "#ITUNES" ).resizable();
+  } );
+  $( function() {
+    $( "#APP" ).resizable();
+  } );
+  $( function() {
+    $( "#MSG" ).resizable();
+  } );
+  $( function() {
+    $( "#SYS" ).resizable();
+  } );
+  $( function() {
+    $( "#OS" ).resizable();
+  } );
+  $( function() {
+    $( "#TRASH" ).resizable();
+  } );
+
+</script>
+
+<script>
+function finder() {
+  var x = document.getElementById("FINDER");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function safari() {
+  var x = document.getElementById("SAFARI");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function xcode() {
+  var x = document.getElementById("XCODE");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function itunes() {
+  var x = document.getElementById("ITUNES");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function app() {
+  var x = document.getElementById("APP");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function msg() {
+  var x = document.getElementById("MSG");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function sys() {
+  var x = document.getElementById("SYS");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function os() {
+  var x = document.getElementById("OS");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function trash() {
+  var x = document.getElementById("TRASH");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* The browser window */
+.container {
+  border: 3px solid #333;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width:600px;
+  height:500px;
+}
+
+/* Container for columns and the top "toolbar" */
+.row {
+  padding: 10px;
+  background: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width:700px:
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three dots */
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Style the input field */
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+
+/* Three bars (hamburger menu) */
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: #aaa;
+  margin: 3px 0;
+  display: block;
+}
+
+/* Page content */
+.content {
+  background:#111;
+  color:white;
+}
+#iframe{  width:595px;
+  height:453px;
+  border:1px solid #333;}
+</style>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+body{
+background: url("bg.jpg");
+font-family: gulim;
+overflow:hidden;
+}
+.Nav{
+background-color: midnightblue;
+border-bottom: 1px solid white;
+color:white;
+padding: 3px 3px 3px 3px;
+position: fixed;
+top:0;
+left:0;
+width:100%;
+}
+a{
+color:white;
+font-size:20px;
+font-family:arial;
+text-decoration:none;
+margin-left:10px;
+}
+.Dock{
+background: rgba(25,25,122,0.8);
+padding-top:10px;
+position:fixed;
+height:60px;
+width:56.5%;
+bottom:0;
+left:25%;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+.Right{position:fixed; right:30; top:4px;}
+img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+img{  transition: transform 0.2s;}
+</style>
+</head>
+
+<body>
+<div class="Nav">
+<a onclick="SSO()">Season</a>
+<a onclick="FFO()">File</a>
+<a oncick="GGO()">Go</a>
+<div class="Right">
+<a class="fa fa-user-circle" style="font-size:20px; margin-left:20px;"></a>
+<a class="fa fa-battery-full" style="font-size:20px; margin-left:20px;"></a>
+</div>
+</div>
+
+
+<div id="sss" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="SSC()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Shut Down</a>
+    <a href="#">Log Out</a>
+    <a href="#">Restart</a>
+    <a href="#">Sleep</a>
+  </div>
+</div>
+
+
+<div id="fff" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="FFC()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+
+<div id="ggg" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="GGC()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+
+
+<div id="FINDER">
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <a onclick="finder()" class="dot" style="background:#ED594A;"></a>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="Finder">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="conts/Files.html" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+
+
+<div id="SAFARI">
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="Safari">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="https://www.bing.com" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+
+<div id="XCODE">
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="xcode">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="https://www.programiz.com/c-programming/online-compiler/" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+<div id="ITUNES">
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="iTunes">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="conts/song.html" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+<div id="APP">
+
+
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="iTunes">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="conts/apps.html" id="iframe"></iframe>
+  </div>
+</div></div>
+
+<div id="MSG">
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="iTunes">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="#" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+<div id="SYS">
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="iTunes">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="https://www.bing.com" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+<div id="OS">
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="iTunes">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="https://www.bing.com" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+<div id="TRASH">
+
+
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="iTunes">
+    </div>
+    <div class="column right">
+      <div>
+        <span class="barg"></span>
+        <span class="barg"></span>
+        <span class="barg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+ <iframe src="conts/trash.html" id="iframe"></iframe>
+  </div>
+</div>
+</div>
+
+
+<div class="dock">
+<a onclick="finder()"><img src="finder.png"></a>
+<a onclick="safari()"><img src="Safari.png"></a>
+<a onclick="xcode()"><img src="xcode.png"></a>
+<a onclick="iTunes()"><img src="iTunes.png"></a>
+<a onclick="app()"><img src="App.png"></a>
+<a onclick="msg()"><img src="Msg.png"></a>
+<a onclick="sys()"><img src="Sys.png"></a>
+<a onclick="os()"><img src="os.png"></a>
+<a onclick="trash()"><img src="Trash.png"></a>
+</div>
+</body>
